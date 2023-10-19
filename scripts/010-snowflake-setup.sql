@@ -103,4 +103,5 @@ COPY INTO raw_hosts (id, name, is_superhost, created_at, updated_at)
                     FILE_FORMAT = (type = 'CSV' skip_header = 1
                     FIELD_OPTIONALLY_ENCLOSED_BY = '"');
 
-```
+SELECT CURRENT_ROLE(), CURRENT_USER();
+;```
